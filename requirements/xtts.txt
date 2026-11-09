@@ -1,0 +1,5 @@
+# .venvs/xtts — Coqui XTTS v2 Bangla fine-tune (Bengali fallback). torch==2.6.0 installed first.
+coqui-tts==0.28.0
+six==1.17.0  # imported by TTS.tts.utils.text.punctuation but not declared by coqui-tts 0.28.0
+soundfile==0.13.1
+scipy>=1.11,<2

@@ -1,0 +1,11 @@
+{
+  "output": "../out/en_chatterbox.wav",
+  "speakers": {
+    "Narr": { "lang": "en", "ref_wav": "../voices/narrator.wav" }
+  },
+  "lines": [
+    { "speaker": "Narr", "emotion": "calm",  "text": "It was raining in Dhaka, and the old house was very quiet." },
+    { "speaker": "Narr", "emotion": "angry", "text": "Who left the front door open again? I told you 3 times!" },
+    { "speaker": "Narr", "emotion": "happy", "text": "[laugh] Well, at least the ghost is having fun." }
+  ]
+}

@@ -1,0 +1,8 @@
+# .venvs/qwen — Qwen3-TTS (English primary). torch==2.6.0 is installed first by --setup.
+# qwen-tts 0.1.1 hard-pins transformers==4.57.3 and accelerate==1.12.0.
+qwen-tts==0.1.1
+transformers==4.57.3
+accelerate==1.12.0
+soundfile==0.13.1
+scipy>=1.11,<2
+pyloudnorm==0.1.1

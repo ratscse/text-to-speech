@@ -1,0 +1,79 @@
+{
+  "_help": {
+    "how_to_run": ".\\.venv\\Scripts\\python tts.py examples\\template_bn.json   (add --mp3 for an MP3 too)",
+    "voices": "Each speaker's ref_wav is the default voice. A line with emotion 'X' uses voices/<name>_X.wav if it exists, else its group's clip, else the default.",
+    "sad_group (uses _sad.wav)": "sad lonely regretful disappointed hurt emotional pleading heartbroken desperate crying sobbing",
+    "soft_group (uses _soft.wav)": "bored calm cold soft tired whisper shy tender serious neutral romantic",
+    "happy_group (uses _happy.wav)": "relieved hopeful grateful confident proud happy cheerful playful excited laughing",
+    "angry_group (uses _angry.wav)": "sarcastic annoyed jealous disgusted frustrated angry furious shouting",
+    "surprised_group (uses _surprised.wav)": "curious confused nervous anxious scared surprised shocked terrified panicked",
+    "line_options": "paragraph: true = longer pause before the line | pause_before_ms: exact pause | exaggeration: 0-2, overrides emotion strength"
+  },
+  "output": "../out/template_bn.wav",
+  "pause_ms": {
+    "same_speaker": 300,
+    "turn": 700,
+    "paragraph": 1300
+  },
+  "speakers": {
+    "Arif": { "lang": "bn", "ref_wav": "../voices/arif.wav" },
+    "Rina": { "lang": "bn", "ref_wav": "../voices/rina.wav" }
+  },
+  "lines": [
+    {
+      "speaker": "Rina",
+      "emotion": "calm",
+      "paragraph": true,
+      "text": "অনেকদিন পর তোমার সাথে দেখা হলো, আরিফ।"
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "surprised",
+      "text": "রিনা! তুমি এখানে? আমি তো ভাবতেই পারিনি।"
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "happy",
+      "text": "আমিও ভাবিনি। কিন্তু তোমাকে দেখে সত্যিই ভালো লাগছে।"
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "hurt",
+      "paragraph": true,
+      "text": "এতদিন একটা খবরও নিলে না কেন?"
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "regretful",
+      "text": "আমি জানি, ভুলটা আমারই ছিল।"
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "angry",
+      "text": "ভুল? তুমি জানো এই কয়েক বছর আমার কীভাবে কেটেছে?"
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "crying",
+      "pause_before_ms": 1500,
+      "text": "জানি... প্রতিটা দিন আমারও একই রকম কেটেছে।"
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "soft",
+      "paragraph": true,
+      "text": "কেঁদো না। আমি তোমার ওপর রাগ করে থাকতে পারি না।"
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "hopeful",
+      "exaggeration": 0.6,
+      "text": "তাহলে কি আমরা আবার নতুন করে শুরু করতে পারি?"
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "romantic",
+      "text": "চলো, এবার আর কখনো হারিয়ে যেও না।"
+    }
+  ]
+}

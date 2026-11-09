@@ -1,0 +1,13 @@
+{
+  "output": "../out/bn_scene.wav",
+  "pause_ms": { "same_speaker": 250, "turn": 600, "paragraph": 1200 },
+  "speakers": {
+    "Rina": { "lang": "bn", "ref_wav": "../voices/rina.wav" },
+    "Arif": { "lang": "bn", "ref_wav": "../voices/arif.wav" }
+  },
+  "lines": [
+    { "speaker": "Rina", "emotion": "angry", "text": "তুমি আবার দেরি করলে? আমি এক ঘণ্টা ধরে অপেক্ষা করছি!" },
+    { "speaker": "Arif", "emotion": "sad",   "text": "সরি, জ্যামে আটকে ছিলাম। বিশ্বাস করো, ২০ মিনিট একটুও গাড়ি নড়েনি।" },
+    { "speaker": "Rina", "emotion": "calm",  "text": "ঠিক আছে, চলো এবার খেতে যাই।" }
+  ]
+}

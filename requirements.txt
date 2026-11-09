@@ -1,0 +1,8 @@
+# Core (the CLI / stitching / tests). Heavy model deps live in requirements/<env>.txt
+# and are installed into separate venvs by `python tts.py --setup`.
+numpy>=1.26,<3
+scipy>=1.11,<2
+soundfile==0.13.1
+pyloudnorm==0.1.1
+huggingface_hub>=0.34,<1.0
+pytest>=8,<9

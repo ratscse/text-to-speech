@@ -1,0 +1,83 @@
+{
+  "_help": {
+    "how_to_run": ".\\.venv\\Scripts\\python tts.py examples\\template_en.json --backend en=chatterbox   (chatterbox follows emotions; the default Qwen backend takes delivery from the clip)",
+    "voices": "Each speaker's ref_wav is the default voice. A line with emotion 'X' uses voices/<name>_X.wav if it exists, else its group's clip, else the default.",
+    "sad_group (uses _sad.wav)": "sad lonely regretful disappointed hurt emotional pleading heartbroken desperate crying sobbing",
+    "soft_group (uses _soft.wav)": "bored calm cold soft tired whisper shy tender serious neutral romantic",
+    "happy_group (uses _happy.wav)": "relieved hopeful grateful confident proud happy cheerful playful excited laughing",
+    "angry_group (uses _angry.wav)": "sarcastic annoyed jealous disgusted frustrated angry furious shouting",
+    "surprised_group (uses _surprised.wav)": "curious confused nervous anxious scared surprised shocked terrified panicked",
+    "line_options": "paragraph: true = longer pause | pause_before_ms: exact pause | exaggeration: 0-2 (chatterbox) | instruct: extra English direction | tags like [laugh] [sigh] [gasp] inside text (chatterbox)",
+    "invented_voice": "English speakers can use \"design\": \"description of the voice\" instead of ref_wav"
+  },
+  "output": "../out/template_en.wav",
+  "pause_ms": {
+    "same_speaker": 250,
+    "turn": 600,
+    "paragraph": 1200
+  },
+  "speakers": {
+    "Narr": { "lang": "en", "ref_wav": "../voices/narrator.wav" },
+    "Arif": { "lang": "en", "ref_wav": "../voices/arif.wav" },
+    "Rina": { "lang": "en", "ref_wav": "../voices/rina.wav" }
+  },
+  "lines": [
+    {
+      "speaker": "Narr",
+      "emotion": "calm",
+      "paragraph": true,
+      "text": "It had been three years since they last spoke."
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "shocked",
+      "text": "Rina? Is that really you?"
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "nervous",
+      "text": "Hi, Arif. I wasn't sure you'd want to see me."
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "sarcastic",
+      "text": "Oh, of course. Three years of silence, and now you just show up."
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "pleading",
+      "paragraph": true,
+      "text": "Please, just let me explain. I never meant to hurt you."
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "heartbroken",
+      "text": "[sigh] You don't know how many nights I waited for your call."
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "sobbing",
+      "pause_before_ms": 1500,
+      "text": "I know. I'm so sorry."
+    },
+    {
+      "speaker": "Arif",
+      "emotion": "tender",
+      "paragraph": true,
+      "instruct": "slowly, with a long breath before speaking",
+      "text": "Come here. It's okay now."
+    },
+    {
+      "speaker": "Rina",
+      "emotion": "laughing",
+      "exaggeration": 0.8,
+      "text": "[laugh] You still remember how I like my tea?"
+    },
+    {
+      "speaker": "Narr",
+      "emotion": "hopeful",
+      "paragraph": true,
+      "text": "And for the first time in years, the house felt warm again."
+    }
+  ]
+}

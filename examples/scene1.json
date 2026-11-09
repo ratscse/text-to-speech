@@ -1,0 +1,16 @@
+{
+  "output": "../out/scene1.wav",
+  "pause_ms": { "same_speaker": 250, "turn": 600, "paragraph": 1200 },
+  "speakers": {
+    "Rina":  { "lang": "bn", "ref_wav": "../voices/rina.wav" },
+    "Arif":  { "lang": "bn", "ref_wav": "../voices/arif.wav" },
+    "Narr":  { "lang": "en", "design": "Middle-aged male narrator, deep warm baritone, clear storyteller diction" },
+    "Boo":   { "lang": "en", "design": "small squeaky cartoon ghost, playful, high pitch, fast" }
+  },
+  "lines": [
+    { "speaker": "Narr", "emotion": "calm",  "text": "It was raining in Dhaka, and the old house was very quiet." },
+    { "speaker": "Rina", "emotion": "angry", "text": "তুমি আবার দেরি করলে? আমি এক ঘণ্টা ধরে অপেক্ষা করছি!" },
+    { "speaker": "Arif", "emotion": "sad",   "text": "সরি, জ্যামে আটকে ছিলাম। বিশ্বাস করো, ২০ মিনিট একটুও গাড়ি নড়েনি।" },
+    { "speaker": "Boo",  "emotion": "happy", "paragraph": true, "text": "[laugh] Nobody ever blames the ghost!" }
+  ]
+}
